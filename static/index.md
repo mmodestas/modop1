@@ -1,6 +1,6 @@
 # About
 
-Add some information about your project here.
+LT ESO P1 Meter Reader
 
 # Installation
 
