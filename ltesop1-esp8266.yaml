@@ -29,6 +29,10 @@ wifi:
     ssid: "P1 Meter LT ESO Hotspot"
     password: "Welcome2!"
 
+# Sets up the improv via serial client for Wi-Fi provisioning.
+# Handy if your device has a usb port for the user to add credentials when they first get it.
+improv_serial:
+
 captive_portal:
 
 web_server:
@@ -156,7 +160,3 @@ sensor:
 
 #debug:
 #  update_interval: 5s
-
-# Sets up the improv via serial client for Wi-Fi provisioning.
-# Handy if your device has a usb port for the user to add credentials when they first get it.
-improv_serial:
