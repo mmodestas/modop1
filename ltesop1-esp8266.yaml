@@ -10,7 +10,7 @@ esphome:
 # In this case it is the core yaml file that does not contain the extra things
 # that are provided by this factory yaml file as the user does not need these once adopted.
 dashboard_import:
-  package_import_url: github://mmodestas/ltesop1meterreader/main/ltesop1-esp8266.yaml@main
+  package_import_url: github://mmodestas/ltesop1meterreader/ltesop1-esp8266.yaml@main
 
 esp8266:
   board: d1_mini
