@@ -1,4 +1,4 @@
-esphome:
+O esphome:
   name: modop1
   friendly_name: Modo P1 Reader (LT-ESO)
   name_add_mac_suffix: false
@@ -27,7 +27,6 @@ ota:
 
 wifi:
   ap:
-#ssid: "P1 Meter LT ESO Hotspot"
 
 # Sets up the improv via serial client for Wi-Fi provisioning.
 # Handy if your device has a usb port for the user to add credentials when they first get it.
@@ -82,55 +81,73 @@ sensor:
     update_interval: 60s
   - platform: dsmr
     energy_delivered_lux:
-      name: P1 Active energy import (+A)
+      name: ESO Active energy import (+A)
+      id: p1_active_energy_import
 
     energy_delivered_tariff1:
-      name: P1 Active energy import (+A) rate 1
+      name: ESO Active energy import (+A) rate 1
+      id: p1_active_energy_import_rate_1
 
     energy_delivered_tariff2:
-      name: P1 Active energy import (+A) rate 2
+      name: ESO Active energy import (+A) rate 2
+      id: p1_active_energy_import_rate_2
 
     energy_returned_lux:
-      name: P1 Active energy export (-A)
+      name: ESO Active energy export (-A)
+      id: p1_active_energy_export
 
     power_delivered:
-      name: P1 Inst active import power (+A)
+      name: P1 Instantaneous active import power (+A)
+      id: p1_instantaneous_active_import_power
 
     power_returned:
-      name: ESO Inst active export power (-A)
+      name: ESO Instantaneous active export power (-A)
+      id: p1_instantaneous_active_export_power
 
     power_delivered_l1:
-      name: P1 Inst active import power (+A) in phase L1 [kW]
+      name: ESO Instantaneous active import power (+A) in phase L1 [kW]
+      id: p1_instantaneous_active_import_power_in_phase_l1
 
     power_delivered_l2:
-      name: P1 Inst active import power (+A) in phase L2 [kW]
+      name: ESO Instantaneous active import power (+A) in phase L2 [kW]
+      id: p1_instantaneous_active_import_power_in_phase_l2
 
     power_delivered_l3:
-      name: P1 Inst active import power (+A) in phase L3 [kW]
+      name: ESO Instantaneous active import power (+A) in phase L3 [kW]
+      id: p1_instantaneous_active_import_power_in_phase_l3
 
     power_returned_l1:
-      name: P1 Inst active export power (-A) in phase L1 [kW]
+      name: P1 Instantaneous active export power (-A) in phase L1 [kW]
+      id: p1_instantaneous_active_export_power_in_phase_l1
 
     power_returned_l2:
-      name: P1 Inst active export power (-A) in phase L2 [kW]
+      name: P1 Instantaneous active export power (-A) in phase L2 [kW]
+      id: p1_instantaneous_active_export_power_in_phase_l2
 
     power_returned_l3:
-      name: P1 Inst active export power (-A) in phase L3 [kW]
+      name: P1 Instantaneous active export power (-A) in phase L3 [kW]
+      id: p1_instantaneous_active_export_power_in_phase_l3
 
     voltage_l1:
-      name: P1 Inst voltage L1
+      name: P1 Instantaneous voltage L1
+      id: p1_instantaneous_voltage_l1
 
     voltage_l2:
-      name: ESO Inst voltage L2
+      name: ESO Instantaneous voltage L2
+      id: p1_instantaneous_voltage_l2
 
     voltage_l3:
-      name: P1 Inst voltage L3
+      name: P1 Instantaneous voltage L3
+      id: p1_instantaneous_voltage_l3
 
     current_l1:
-      name: P1 Inst current L1
+      name: P1 Instantaneous current L1
+      id: p1_instantaneous_current_l1
 
     current_l2:
-      name: P1 Inst current L2
+      name: P1 Instantaneous current L2
+      id: p1_instantaneous_current_l2
 
     current_l3:
-      name: P1 Inst current L3
+      name: P1 Instantaneous current L3
+      id: p1_instantaneous_current_l3
