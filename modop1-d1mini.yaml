@@ -1,7 +1,7 @@
 esphome:
   name: modop1
   friendly_name: Modo P1 Reader (LT-ESO)
-  name_add_mac_suffix: true
+  name_add_mac_suffix: false
   project:
     name: modo.p1_reader_lt_eso
     version: dev # This will be replaced by the github workflows with the `release` version
@@ -82,55 +82,55 @@ sensor:
     update_interval: 60s
   - platform: dsmr
     energy_delivered_lux:
-      name: ESO Active energy import (+A)
+      name: P1 Active energy import (+A)
 
     energy_delivered_tariff1:
-      name: ESO Active energy import (+A) rate 1
+      name: P1 Active energy import (+A) rate 1
 
     energy_delivered_tariff2:
-      name: ESO Active energy import (+A) rate 2
+      name: P1 Active energy import (+A) rate 2
 
     energy_returned_lux:
-      name: ESO Active energy export (-A)
+      name: P1 Active energy export (-A)
 
     power_delivered:
-      name: ESO Inst active import power (+A)
+      name: P1 Inst active import power (+A)
 
     power_returned:
       name: ESO Inst active export power (-A)
 
     power_delivered_l1:
-      name: ESO Inst active import power (+A) in phase L1 [kW]
+      name: P1 Inst active import power (+A) in phase L1 [kW]
 
     power_delivered_l2:
-      name: ESO Inst active import power (+A) in phase L2 [kW]
+      name: P1 Inst active import power (+A) in phase L2 [kW]
 
     power_delivered_l3:
-      name: ESO Inst active import power (+A) in phase L3 [kW]
+      name: P1 Inst active import power (+A) in phase L3 [kW]
 
     power_returned_l1:
-      name: ESO Inst active export power (-A) in phase L1 [kW]
+      name: P1 Inst active export power (-A) in phase L1 [kW]
 
     power_returned_l2:
-      name: ESO Inst active export power (-A) in phase L2 [kW]
+      name: P1 Inst active export power (-A) in phase L2 [kW]
 
     power_returned_l3:
-      name: ESO Inst active export power (-A) in phase L3 [kW]
+      name: P1 Inst active export power (-A) in phase L3 [kW]
 
     voltage_l1:
-      name: ESO Inst voltage L1
+      name: P1 Inst voltage L1
 
     voltage_l2:
       name: ESO Inst voltage L2
 
     voltage_l3:
-      name: ESO Inst voltage L3
+      name: P1 Inst voltage L3
 
     current_l1:
-      name: ESO Inst current L1
+      name: P1 Inst current L1
 
     current_l2:
-      name: ESO Inst current L2
+      name: P1 Inst current L2
 
     current_l3:
-      name: ESO Inst current L3
+      name: P1 Inst current L3
