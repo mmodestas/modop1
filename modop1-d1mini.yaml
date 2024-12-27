@@ -1,5 +1,5 @@
 esphome:
-  name: ModoP1
+  name: modop1
   friendly_name: Modo P1 Reader (LT-ESO)
   name_add_mac_suffix: true
   project:
