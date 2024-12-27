@@ -1,4 +1,4 @@
-O esphome:
+esphome:
   name: modop1
   friendly_name: Modo P1 Reader (LT-ESO)
   name_add_mac_suffix: false
