@@ -20,7 +20,7 @@ jobs:
       matrix:
         #### Modify below here to match your project ####
         file:
-          - ltesop1-esp8266
+          - modop1-d1mini
         #### Modify above here to match your project ####
 
         esphome-version:
