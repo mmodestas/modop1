@@ -1,10 +1,10 @@
 esphome:
-  name: modop1
-  friendly_name: "Modo P1 Reader (LT-ESO)"
-  name_add_mac_suffix: false
+  name: ModoP1
+  friendly_name: Modo P1 Reader (LT-ESO)
+  name_add_mac_suffix: true
   project:
-    name: "modo.p1_reader_lt_eso"
-    version: "dev"
+    name: modo.p1_reader_lt_eso
+    version: dev # This will be replaced by the github workflows with the `release` version
     
 # This should point to the public location of the yaml file that will be adopted.
 # In this case it is the core yaml file that does not contain the extra things
@@ -27,10 +27,12 @@ ota:
 
 wifi:
   ap:
+#ssid: "P1 Meter LT ESO Hotspot"
 
 # Sets up the improv via serial client for Wi-Fi provisioning.
 # Handy if your device has a usb port for the user to add credentials when they first get it.
-#improv_serial:
+
+improv_serial:
 
 captive_portal:
 
@@ -82,72 +84,54 @@ sensor:
   - platform: dsmr
     energy_delivered_lux:
       name: ESO Active energy import (+A)
-      id: p1_active_energy_import
 
     energy_delivered_tariff1:
       name: ESO Active energy import (+A) rate 1
-      id: p1_active_energy_import_rate_1
 
     energy_delivered_tariff2:
       name: ESO Active energy import (+A) rate 2
-      id: p1_active_energy_import_rate_2
 
     energy_returned_lux:
       name: ESO Active energy export (-A)
-      id: p1_active_energy_export
 
     power_delivered:
-      name: P1 Instantaneous active import power (+A)
-      id: p1_instantaneous_active_import_power
+      name: ESO Inst active import power (+A)
 
     power_returned:
-      name: ESO Instantaneous active export power (-A)
-      id: p1_instantaneous_active_export_power
+      name: ESO Inst active export power (-A)
 
     power_delivered_l1:
-      name: ESO Instantaneous active import power (+A) in phase L1 [kW]
-      id: p1_instantaneous_active_import_power_in_phase_l1
+      name: ESO Inst active import power (+A) in phase L1 [kW]
 
     power_delivered_l2:
-      name: ESO Instantaneous active import power (+A) in phase L2 [kW]
-      id: p1_instantaneous_active_import_power_in_phase_l2
+      name: ESO Inst active import power (+A) in phase L2 [kW]
 
     power_delivered_l3:
-      name: ESO Instantaneous active import power (+A) in phase L3 [kW]
-      id: p1_instantaneous_active_import_power_in_phase_l3
+      name: ESO Inst active import power (+A) in phase L3 [kW]
 
     power_returned_l1:
-      name: P1 Instantaneous active export power (-A) in phase L1 [kW]
-      id: p1_instantaneous_active_export_power_in_phase_l1
+      name: ESO Inst active export power (-A) in phase L1 [kW]
 
     power_returned_l2:
-      name: P1 Instantaneous active export power (-A) in phase L2 [kW]
-      id: p1_instantaneous_active_export_power_in_phase_l2
+      name: ESO Inst active export power (-A) in phase L2 [kW]
 
     power_returned_l3:
-      name: P1 Instantaneous active export power (-A) in phase L3 [kW]
-      id: p1_instantaneous_active_export_power_in_phase_l3
+      name: ESO Inst active export power (-A) in phase L3 [kW]
 
     voltage_l1:
-      name: P1 Instantaneous voltage L1
-      id: p1_instantaneous_voltage_l1
+      name: ESO Inst voltage L1
 
     voltage_l2:
-      name: ESO Instantaneous voltage L2
-      id: p1_instantaneous_voltage_l2
+      name: ESO Inst voltage L2
 
     voltage_l3:
-      name: P1 Instantaneous voltage L3
-      id: p1_instantaneous_voltage_l3
+      name: ESO Inst voltage L3
 
     current_l1:
-      name: P1 Instantaneous current L1
-      id: p1_instantaneous_current_l1
+      name: ESO Inst current L1
 
     current_l2:
-      name: P1 Instantaneous current L2
-      id: p1_instantaneous_current_l2
+      name: ESO Inst current L2
 
     current_l3:
-      name: P1 Instantaneous current L3
-      id: p1_instantaneous_current_l3
+      name: ESO Inst current L3
