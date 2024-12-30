@@ -1,14 +1,17 @@
 esphome:
-  # This will allow for project identification,
-  # configuration and updates.
   name: modop1reader
+  friendly_name: Modo P1 Reader
+  # Automatically add the mac address to the name
+  # so you can use a single firmware for all devices
+  name_add_mac_suffix: true
   project:
     name: modo.p1meter_lt_eso
-    version: dev # This will be replaced by the github workflows with the `release` version
+    version: dev # This will be replaced by the github workflows with the `release` version   
 
 # This should point to the public location of the yaml file that will be adopted.
 # In this case it is the core yaml file that does not contain the extra things
 # that are provided by this factory yaml file as the user does not need these once adopted.
+
 dashboard_import:
   package_import_url: github://mmodestas/modop1/modop1-d1mini.yaml@main
 
