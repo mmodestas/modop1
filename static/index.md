@@ -1,8 +1,5 @@
 # About
-
-Modo P1 Meter Reader (LT-ESO)
-
-ESP8266-based (Wemos D1).
+ESP8266-based P1 electricity meter reader.
 
 This version is adapted from various other implementations using the DSMR library, modified specifically to align with the addresses and descriptions defined in the Lithuanian P1 specification (provided by ESO).
 
