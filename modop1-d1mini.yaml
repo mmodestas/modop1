@@ -48,7 +48,7 @@ text_sensor:
       name: dsmr_telegram
 sensor:
   - platform: uptime
-    name: ESO Device Uptime
+    name: P1 Reader Device Uptime
     type: seconds
     update_interval: 60s
   - platform: wifi_signal
