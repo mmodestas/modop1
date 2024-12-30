@@ -1,7 +1,7 @@
 esphome:
   # This will allow for project identification,
   # configuration and updates.
-  name: ltesop1meterreader
+  name: modop1reader
   project:
     name: modo.p1meter_lt_eso
     version: dev # This will be replaced by the github workflows with the `release` version
