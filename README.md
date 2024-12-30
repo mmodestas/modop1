@@ -1,5 +1,5 @@
 # P1 Meter Reader (LT-ESO)
 
-This repo contains ESPHome configuration for ESP8266 based P1 Reader. 
+This repository contains the ESPHome configuration for an ESP8266-based P1 Reader.
 
-This version is based on number of other implementations using DSMR library, only adjusted to match adresses and descriptions of Lithuanian P1 specification (provided by ESO). 
+This version is adapted from various other implementations using the DSMR library, modified specifically to align with the addresses and descriptions defined in the Lithuanian P1 specification (provided by ESO).
