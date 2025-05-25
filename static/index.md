@@ -3,6 +3,9 @@ ESP8266-based P1 electricity meter reader.
 
 This version is adapted from various other implementations using the DSMR library, modified specifically to align with the addresses and descriptions defined in the Lithuanian P1 specification (provided by ESO).
 
+# Features
+
+I made this to use external antenna, as with standard D1 Mini on board antena signal ir poor in metal outdoor cabinet. Signal quality is considerably better when putting antenna outside.
 
 # Installation
 
