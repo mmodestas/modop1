@@ -2,7 +2,7 @@
 
 ## Overview
 
-This device is a compact and reliable solution for reading electricity meter data via the P1 port using an ESP8266 microcontroller. Built around the widely popular **D1 Mini** development board—one of the most commonly used platforms among home automation enthusiasts—it is **powered by ESPHome**, making configuration simple and integration with platforms like **Home Assistant** seamless. 
+This device is a compact and reliable solution for reading electricity meter data via the P1 port using an ESP8266 microcontroller. Built around the widely popular **D1 Mini** development board - one of the most commonly used platforms among home automation enthusiasts - it is **powered by ESPHome**, making configuration simple and integration with platforms like **Home Assistant** seamless. 
 
 Leveraging the **DSMR library**, this reader is specifically adapted to comply with the Lithuanian P1 specification as defined by **ESO**, ensuring accurate and compatible data interpretation out of the box.
 
